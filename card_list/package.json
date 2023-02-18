@@ -1,0 +1,24 @@
+{
+  "author": "noknow",
+  "bugs": {
+    "url": "https://github.com/noknow-hub/pkg-web-design/issues"
+  },
+  "description": "Web design for card list",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/card_list/README.md",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@noknow/web-design-card-list",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
+    "directory": "card_list"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "0.1.1"
+}
