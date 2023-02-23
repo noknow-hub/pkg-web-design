@@ -1,0 +1,24 @@
+{
+  "author": "noknow",
+  "bugs": {
+    "url": "https://github.com/noknow-hub/pkg-web-design/issues"
+  },
+  "description": "Web design for article box",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/article_box/README.md",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@noknow/web-design-article-box",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
+    "directory": "article_box"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "0.1.2"
+}

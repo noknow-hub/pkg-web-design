@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Accordion box
+
+ [HTML]
+ <div class="accordion-box">
+   <ul class="list">
+     <li class="item">
+       <div class="heading-box">
+         <time class="date">YYYY/MM/DD</time>
+         <h3 class="heading">HEADING TEXT</h3>
+       </div>
+     </li>
+     <li class="item [active]">
+       <div class="heading-box has-content">
+         <time class="date">YYYY/MM/DD</time>
+         <h3 class="heading">HEADING TEXT</h3>
+         <svg class="icon [rotate-x]" xmlns="http://www.w3.org/2000/svg"><use href=""></svg>
+       </div>
+       <div class="content-box">
+         <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+       </div>
+     </li>
+   </ul>
+ </div>
+**********************************************************************/
+.accordion-box {
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin: 1.0em auto;
+}
+.accordion-box > .list {
+    list-style-type: none;
+    margin: 0;
+}
+.accordion-box > .list > .item {
+    border-bottom: 3px solid #808080;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding: 10px 0;
+}
+@media screen and (min-width: 600px) {
+    .accordion-box > .list > .item {
+        padding: 20px 0;
+    }
+}
+.accordion-box > .list > .item.has-content {
+    cursor: pointer;
+}
+.accordion-box > .list > .item > .heading-box {
+    box-sizing: border-box;
+    width: 100%;
+}
+.accordion-box > .list > .item > .heading-box > .date {
+    flex: 0 0 calc(100% - 32px);
+    font-size: 0.8em;
+    width: 100%;
+}
+.accordion-box > .list > .item > .heading-box > .icon {
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 4px;
+    width: 24px;
+}
+@media screen and (min-width: 768px) {
+    .accordion-box > .list > .item > .heading-box > .icon {
+        height: 32px;
+        right: 0;
+        width: 32px;
+    }
+}
+.accordion-box > .list > .item > .heading-box > .icon.rotate-x {
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    transition: transform 0.3s;
+}
+.accordion-box > .list > .item.active > .heading-box > .icon.rotate-x {
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.accordion-box > .list > .item > .heading-box > .heading {
+    flex: 0 0 calc(100% - 32px);
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    word-break: break-all;
+}
+.accordion-box > .list > .item > .heading-box.has-content {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.accordion-box > .list > .item > .content-box {
+    box-sizing: border-box;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow-y: hidden;
+    padding: 0 1.0em;
+    transition: opacity, margin-top, max-height 0.3s;
+    word-break: break-all;
+}
+.accordion-box > .list > .item.active > .content-box {
+    margin-top: 1em;
+    opacity: 1;
+}
