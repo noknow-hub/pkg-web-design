@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Directory
+
+ [HTML]
+ <nav class="directory">
+   <ul class="list">
+     <li class="item heading">
+       <a class="link" href="">
+         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="/icons.svg#home"/></svg>
+         <p class="content">LINK</p>
+       </a>
+     </li>
+     <li class="item heading drop-down active">
+       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="/icons.svg#home"/></svg>
+       <p class="content">TITLE</p>
+       <svg class="icon rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="/icons.svg#arrowDown"/></svg>
+     </li>
+     <li class="item sub-list">
+       <ul class="list">
+         <li class="item">
+           <a class="link" href="">
+             <p class="content">LINK<small class="color-muted font-size-x-small margin-left-x-small">TAG</small></p>
+           </a>
+         </li>
+         <li class="item">
+           <a class="content link" href="">LINK</a>
+         </li>
+         <li class="item drop-down active">
+           <p class="content">TITLE</span></p>
+           <svg class="icon rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="//icons.svg#arrowDown"/></svg>
+         </li>
+         <li class="item sub-list">
+           <ul class="list">
+             <li class="item">
+               <a class="content link" href="">LINK</a>
+             </li>
+             <li class="item">
+               <p class="content">TITLE</span></p>
+             </li>
+             <li class="item sub-list">
+               <ul class="list">
+                 <li class="item">
+                   <a class="content link" href="">LINK</a>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+       </ul>
+     </li>
+     <li class="item heading">
+       <a class="link" href="">
+         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="/icons.svg#home"/></svg>
+         <span class="content">LINK</span>
+       </a>
+     </li>
+   </ul>
+ </nav>
+**********************************************************************/
+.directory {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+.directory > .list,
+.directory .sub-list > .list {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.directory .sub-list > .list {
+    border-left: 3px solid;
+    list-style-type: none;
+    margin-left: 10px;
+    overflow: hidden;
+    width: calc(100% - 10px);
+}
+.directory > .list > .item.drop-down + .sub-list,
+.directory .sub-list > .list > .item.drop-down + .sub-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+.directory > .list > .item.drop-down.active + .sub-list,
+.directory .sub-list > .list > .item.drop-down.active + .sub-list {
+    max-height: unset;
+}
+.directory > .list > .item,
+.directory .sub-list > .list > .item {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+}
+.directory .sub-list > .list > .item {
+    margin-left: 5px;
+}
+.directory > .list > .item.drop-down,
+.directory .sub-list > .list > .item.drop-down {
+    cursor: pointer;
+}
+.directory > .list > .item > .content,
+.directory .sub-list > .list > .item > .content,
+.directory > .list > .item > .link > .content,
+.directory .sub-list > .list > .item > .link > .content {
+    box-sizing: border-box;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+.directory > .list > .item > .link,
+.directory .sub-list > .list > .item > .link {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+}
+.directory > .list > .item > .link:hover,
+.directory .sub-list > .list > .item > .link:hover {
+    opacity: 0.3;
+}
+.directory > .list > .item.heading,
+.directory .sub-list > .list > .item.heading {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.directory > .list > .item.heading:first-child,
+.directory .sub-list > .list > .item.heading:first-child {
+    margin-top: 0;
+}
+.directory > .list > .item > .icon,
+.directory .sub-list > .list > .item > .icon,
+.directory > .list > .item > .link > .icon,
+.directory .sub-list > .list > .item > .link > .icon {
+    fill: inherit;
+    flex-shrink: 0;
+    height: 20px;
+    margin: 0;
+    width: 20px;
+}
+@media screen and (min-width: 600px) {
+    .directory > .list > .item > .icon,
+    .directory .sub-list > .list > .item > .icon,
+    .directory > .list > .item > .link > .icon,
+    .directory .sub-list > .list > .item > .link > .icon {
+        height: 24px;
+        width: 24px;
+    }
+}
+.directory > .list > .item.drop-down > .icon.rotate,
+.directory .sub-list > .list > .item.drop-down > .icon.rotate,
+.directory > .list > .item.drop-down > .link > .icon.rotate,
+.directory .sub-list > .list > .item.drop-down > .link > .icon.rotate {
+    -o-transform: rotateX(0);
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.directory > .list > .item.drop-down.active > .icon.rotate,
+.directory .sub-list > .list > .item.drop-down.active > .icon.rotate,
+.directory > .list > .item.drop-down.active > .link > .icon.rotate,
+.directory .sub-list > .list > .item.drop-down.active > .link > .icon.rotate {
+    -o-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}

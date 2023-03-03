@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Horizontal card
+
+ [HTML]
+ <ul class="horizontal-card">
+   <li class="item">
+     <a class="link" href="">
+       <picture class="img-box">
+         <source srcset="/sample.webp" type="image/webp">
+         <img class="img" src="/sample.png" alt="" loading="lazy">
+       </picture>
+       <div class="content-box">
+         <h3 class="title">Article Title</h3>
+         <div class="attr-box">
+           <time class="date" datetime="yyyy-mm-dd">2022-08-15</time>
+           <span class="tag">TAG1</span>
+           <span class="tag">TAG2</span>
+         </div>
+         <p class="excerpt">text...</p>
+       </div>
+     </a>
+   </li>
+ </ul>
+
+ <ul class="horizontal-card">
+   <li class="item">
+     <picture class="img-box">
+       <source srcset="/sample.webp" type="image/webp">
+       <img class="img" src="/sample.png" alt="" loading="lazy">
+     </picture>
+     <div class="content-box">
+       <a class="link" href="">
+         <h3 class="title">Article Title</h3>
+       </a>
+       <div class="attr-box">
+         <time class="date" datetime="yyyy-mm-dd">2022-08-15</time>
+         <span class="tag">TAG1</span>
+         <span class="tag">TAG2</span>
+       </div>
+       <p class="excerpt">text...</p>
+     </div>
+   </li>
+ </ul>
+**********************************************************************/
+.horizontal-card {
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+}
+.horizontal-card > .item {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.horizontal-card > .item > .link {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+.horizontal-card > .item > .link:hover {
+    opacity: 0.6;
+}
+.horizontal-card > .item > .img-box,
+.horizontal-card > .item > .link > .img-box {
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: auto;
+    overflow: hidden;
+    width: 100px;
+}
+@media screen and (min-width: 600px) {
+    .horizontal-card > .item > .img-box,
+    .horizontal-card > .item > .link > .img-box {
+        width: 150px;
+    }
+}
+.horizontal-card > .item > .img-box .img,
+.horizontal-card > .item > .link > .img-box .img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.horizontal-card > .item > .img-box .img.contain,
+.horizontal-card > .item > .link > .img-box .img.contain {
+    object-fit: contain;
+}
+.horizontal-card > .item > .link > .img-box .img {
+    transition: filter, transform 0.3s;
+}
+.horizontal-card > .item > .link > .img-box .img:hover {
+    opacity: 0.6;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.horizontal-card > .item > .content-box,
+.horizontal-card > .item > .link > .content-box {
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    line-height: 1.5;
+    padding: 10px;
+}
+@media screen and (min-width: 600px) {
+    .horizontal-card > .item > .content-box,
+    .horizontal-card > .item > .link > .content-box {
+        padding: 10px 20px;
+    }
+}
+.horizontal-card > .item > .content-box > .link {
+    display: inline-block;
+    width: 100%;
+}
+.horizontal-card > .item > .content-box > .title,
+.horizontal-card > .item > .link > .content-box > .title,
+.horizontal-card > .item > .content-box > .link > .title {
+    font-size: 1.15em;
+    font-weight: bold;
+    line-height: 1.25;
+    text-decoration: underline;
+    word-break: break-all;
+}
+.horizontal-card > .item > .link > .content-box > .title,
+.horizontal-card > .item > .content-box > .link > .title {
+    color: #007bff;
+    transition: opacity 0.3s;
+}
+.horizontal-card > .item > .content-box > .link > .title:hover {
+    opacity: 0.6;
+}
+.horizontal-card > .item > .content-box > .excerpt,
+.horizontal-card > .item > .link > .content-box > .excerpt {
+    font-size: 0.9em;
+    margin-top: 5px;
+    opacity: 0.8;
+    word-break: break-all;
+}
+.horizontal-card > .item > .content-box > .attr-box,
+.horizontal-card > .item > .link > .content-box > .attr-box {
+    align-items: center;
+    column-gap: 5px;
+    display: -webkit-flex;
+    display: flex;
+}
+.horizontal-card > .item > .content-box > .attr-box > .date,
+.horizontal-card > .item > .link > .content-box > .attr-box > .date {
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+.horizontal-card > .item > .content-box > .attr-box > .tag,
+.horizontal-card > .item > .link > .content-box > .attr-box > .tag {
+    background-color: var(--nkw-color-dark-gray);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 1.0;
+    opacity: 0.6;
+    padding: 3px 6px;
+}

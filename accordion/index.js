@@ -2,21 +2,21 @@
 // index.js
 //////////////////////////////////////////////////////////////////////
 
-class AccordionBox {
+class Accordion {
 
-    static classNameAccordionBox = 'accordion-box';
-    static classNameAccordionBoxHeading = 'heading';
-    static classNameAccordionBoxHeadingBox = 'heading-box';
-    static classNameAccordionBoxHasContent = 'has-content';
-    static classNameAccordionBoxContent = 'content-box';
-    static classNameAccordionBoxItem = 'item';
+    static classNameAccordion = 'accordion';
+    static classNameAccordionHeading = 'heading';
+    static classNameAccordionHeadingBox = 'heading-box';
+    static classNameAccordionHasContent = 'has-content';
+    static classNameAccordionContent = 'content-box';
+    static classNameAccordionItem = 'item';
     static classNameActive = 'active';
 
     //////////////////////////////////////////////////////////////////////
     // Constructor.
     //////////////////////////////////////////////////////////////////////
     constructor() {
-        this.accordionBoxElms = document.querySelectorAll(`.${AccordionBox.classNameAccordionBox}`);
+        this.accordionBoxElms = document.querySelectorAll(`.${Accordion.classNameAccordion}`);
     }
 
 
@@ -28,19 +28,19 @@ class AccordionBox {
             return;
         }
         for(let i = 0; i < this.accordionBoxElms.length; i++) {
-            const elms = this.accordionBoxElms[i].querySelectorAll(`.${AccordionBox.classNameAccordionBoxHeadingBox}.${AccordionBox.classNameAccordionBoxHasContent}`);
+            const elms = this.accordionBoxElms[i].querySelectorAll(`.${Accordion.classNameAccordionHeadingBox}.${Accordion.classNameAccordionHasContent}`);
             for(let j = 0; j < elms.length; j++) {
                 const elm = elms[j].parentElement;
-                if(elm === undefined || elm === null || !elm.classList.contains(AccordionBox.classNameAccordionBoxItem)) {
+                if(elm === undefined || elm === null || !elm.classList.contains(Accordion.classNameAccordionItem)) {
                     continue;
                 }
-                const contentElm = elm.querySelector(`.${AccordionBox.classNameAccordionBoxContent}`);
+                const contentElm = elm.querySelector(`.${Accordion.classNameAccordionContent}`);
                 if(contentElm === undefined || contentElm === null) {
                     continue;
                 }
                 elms[j].addEventListener('click', () => {
-                    elm.classList.toggle(AccordionBox.classNameActive);
-                    if(elm.classList.contains(AccordionBox.classNameActive)) {
+                    elm.classList.toggle(Accordion.classNameActive);
+                    if(elm.classList.contains(Accordion.classNameActive)) {
                         contentElm.style.maxHeight = `${contentElm.scrollHeight}px`;
                     } else {
                         contentElm.style.maxHeight = '0px';
@@ -51,4 +51,4 @@ class AccordionBox {
     }
 
 }
-export { AccordionBox };
+export { Accordion };

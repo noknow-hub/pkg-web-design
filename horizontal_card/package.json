@@ -3,22 +3,22 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for article box",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/article_box/README.md",
+  "description": "Web design for horizontal card",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/horizontal_card/README.md",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-article-box",
+  "name": "@noknow/web-design-horizontal-card",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "article_box"
+    "directory": "horizontal_card"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.2"
+  "version": "0.1.1"
 }

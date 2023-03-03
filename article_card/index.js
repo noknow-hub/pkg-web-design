@@ -2,9 +2,9 @@
 // index.js
 //////////////////////////////////////////////////////////////////////
 
-class CardList {
+class ArticleCard {
 
-    static classNameForCardList = 'card-list';
+    static classNameForArticleCard = 'article-card';
     static classNameForItem = 'item';
     static classNameForTitle = 'title';
     static classNameForExcerpt = 'excerpt';
@@ -15,7 +15,7 @@ class CardList {
     // Constructor.
     //////////////////////////////////////////////////////////////////////
     constructor() {
-        this.cardListElms = document.querySelectorAll(`.${CardList.classNameForCardList}`);
+        this.cardListElms = document.querySelectorAll(`.${ArticleCard.classNameForArticleCard}`);
         this.context = document.createElement('canvas').getContext('2d');
     }
 
@@ -29,16 +29,16 @@ class CardList {
         }
         for(let i = 0; i < this.cardListElms.length; i++) {
             const cardListElm = this.cardListElms[i];
-            const maxLineInTitle = parseInt(cardListElm.dataset[CardList.dataKeyMaxLineInTitle], 10);
-            const maxLineInExcerpt = parseInt(cardListElm.dataset[CardList.dataKeyMaxLineInExcerpt], 10);
-            const itemElms = cardListElm.querySelectorAll(`.${CardList.classNameForItem}`);
+            const maxLineInTitle = parseInt(cardListElm.dataset[ArticleCard.dataKeyMaxLineInTitle], 10);
+            const maxLineInExcerpt = parseInt(cardListElm.dataset[ArticleCard.dataKeyMaxLineInExcerpt], 10);
+            const itemElms = cardListElm.querySelectorAll(`.${ArticleCard.classNameForItem}`);
             for(let j = 0; j < itemElms.length; j++) {
                 const elm = itemElms[j];
                 if(!isNaN(maxLineInTitle)) {
-                    this.trimText(elm.querySelector(`.${CardList.classNameForTitle}`), maxLineInTitle);
+                    this.trimText(elm.querySelector(`.${ArticleCard.classNameForTitle}`), maxLineInTitle);
                 }
                 if(!isNaN(maxLineInExcerpt)) {
-                    this.trimText(elm.querySelector(`.${CardList.classNameForExcerpt}`), maxLineInExcerpt);
+                    this.trimText(elm.querySelector(`.${ArticleCard.classNameForExcerpt}`), maxLineInExcerpt);
                 }
             }
         }
@@ -79,4 +79,4 @@ class CardList {
     }
 
 }
-export { CardList };
+export { ArticleCard };
