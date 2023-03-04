@@ -53,6 +53,10 @@
     box-sizing: border-box;
     display: -webkit-flex;
     display: flex;
+    margin-top: 10px;
+}
+.horizontal-card > .item:first-child {
+    margin-top: 0;
 }
 .horizontal-card > .item > .link {
     box-sizing: border-box;

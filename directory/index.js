@@ -42,14 +42,11 @@ class Directory {
         if(nextElm === undefined || nextElm === null) {
             return;
         }
-        const listElm = nextElm.querySelector(`.${Directory.classNameList}`);
+        const listElm = nextElm.querySelector(`.${Directory.classNameSubList}`);
         if(listElm === undefined || listElm === null) {
             return;
         }
         const listElmRect = listElm.getBoundingClientRect();
-        if(elm.classList.contains(Directory.classNameActive)) {
-            nextElm.style.maxHeight = `${listElmRect.height}px`;
-        }
         if(elm.classList.contains(Directory.classNameActive)) {
             nextElm.style.maxHeight = `${listElmRect.height}px`;
         } else {

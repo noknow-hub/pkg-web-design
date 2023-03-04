@@ -3,18 +3,18 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for directory",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/directory/README.md",
+  "description": "Web design for console",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/console/README.md",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-directory",
+  "name": "@noknow/web-design-console",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "directory"
+    "directory": "console"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

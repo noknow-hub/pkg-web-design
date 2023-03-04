@@ -3,22 +3,22 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for directory",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/directory/README.md",
+  "description": "Web design for layout of two columns",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/layout_two_cols/README.md",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-directory",
+  "name": "@noknow/web-design-layout-two-cols",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "directory"
+    "directory": "layout_two_cols"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.3"
+  "version": "0.1.0"
 }
