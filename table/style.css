@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Table
+
+ [HTML]
+ <table class="table">
+   <thead class="thead">
+     <tr class="tr">
+       <th class="th">THEAD</th>
+       <th class="th">THEAD</th>
+     </tr>
+   </thead>
+   <tbody class="tbody">
+     <tr class="tr">
+       <td class="td">TDATA</td>
+       <td class="td">TDATA</td>
+     </tr>
+   </tbody>
+ </table>
+**********************************************************************/
+.scroll-table {
+    margin: 0;
+    overflow: scroll;
+    padding: 0;
+    width: 100%;
+}
+.table {
+    border-collapse: initial;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.scroll-table[data-sticky="thead"] > .table > thead {
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.table > thead > tr {
+}
+.table > tbody > tr {
+    transition: opacity 0.3s;
+}
+.table.stripe > tbody > tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+.table > tbody > tr:hover {
+    opacity: 0.6;
+}
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+    border-bottom: 1px inset;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    word-break: break-all;
+}
+.table > thead > tr > th.nowrap,
+.table > thead > tr > td.nowrap,
+.table > tbody > tr > th.nowrap,
+.table > tbody > tr > td.nowrap {
+    white-space: nowrap;
+}
+.scroll-table > .table > thead > tr > th,
+.scroll-table > .table > thead > tr > td,
+.scroll-table > .table > tbody > tr > th,
+.scroll-table > .table > tbody > tr > td {
+    white-space: nowrap;
+}
+.scroll-table > .table > thead > tr > th.sticky,
+.scroll-table > .table > thead > tr > td.sticky,
+.scroll-table > .table > tbody > tr > th.sticky,
+.scroll-table > .table > tbody > tr > td.sticky {
+    background-color: #f0f0f0;
+    left: 0;
+    position: sticky;
+    z-index: 2;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th {
+    border-bottom: 3px inset;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.table-footer {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0.9em;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.table-footer > .per-page-box {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+}
+.table-footer > .per-page-box > .txt {
+    font-size: inherit;
+}
+.table-footer > .per-page-box > .select {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px;
+}
+.table-footer > .pagination-box {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+}
+.table-footer > .pagination-box {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 20px;
+}
+.table-footer > .pagination-box > .txt {
+    font-size: inherit;
+}
+.table-footer > .pagination-box > .prev,
+.table-footer > .pagination-box > .next {
+    box-sizing: border-box;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 3px 5px;
+    text-decoration: underline;
+    transition: opacity 0.3s ease-in-out;
+}
+.table-footer > .pagination-box > .prev:hover,
+.table-footer > .pagination-box > .next:hover {
+    opacity: 0.4;
+}
+

@@ -3,18 +3,18 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for article",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/article/README.md",
+  "description": "Web design for table",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/table/README.md",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-article",
+  "name": "@noknow/web-design-table",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "article"
+    "directory": "table"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
