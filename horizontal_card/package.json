@@ -4,7 +4,7 @@
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
   "description": "Web design for horizontal card",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/horizontal_card/README.md",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/horizontal_card",
   "license": "MIT",
   "main": "index.js",
   "name": "@noknow/web-design-horizontal-card",
@@ -20,5 +20,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.2"
+  "version": "0.1.3"
 }

@@ -4,7 +4,7 @@
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
   "description": "Web design for console",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/console/README.md",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/console",
   "license": "MIT",
   "main": "index.js",
   "name": "@noknow/web-design-console",
@@ -20,5 +20,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.4"
+  "version": "0.1.5"
 }

@@ -4,7 +4,7 @@
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
   "description": "Web design for layout of two columns",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/layout_two_cols/README.md",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/layout_two_cols",
   "license": "MIT",
   "main": "index.js",
   "name": "@noknow/web-design-layout-two-cols",
@@ -20,5 +20,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
