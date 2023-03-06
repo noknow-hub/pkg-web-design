@@ -25,10 +25,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    line-height: 1.5;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
+}
+.article-card.important {
+    align-items: flex-start !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    line-height: 1.5 !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
 }
 .article-card > .item {
     display: block;
@@ -38,7 +51,7 @@
     .article-card > .item {
         width: calc(50% - 10px);
     }
-    .article-card[data-max_cols_min_width_600="1"] > .item {
+    .article-card[data-max-cols-min-width-600="1"] > .item {
         width: 100%;
     }
 }
@@ -46,7 +59,7 @@
     .article-card > .item {
         width: calc(33.33% - 13.33px);
     }
-    .article-card[data-max_cols_min_width_896="2"] > .item {
+    .article-card[data-max-cols-min-width-896="2"] > .item {
         width: calc(50% - 10px);
     }
 }
@@ -54,15 +67,18 @@
     .article-card > .item {
         width: calc(25% - 15px);
     }
-    .article-card[data-max_cols_min_width_1200="3"] > .item {
+    .article-card[data-max-cols-min-width-1200="3"] > .item {
         width: calc(33.33% - 13.33px);
     }
-    .article-card[data-max_cols_min_width_1200="2"] > .item {
+    .article-card[data-max-cols-min-width-1200="2"] > .item {
         width: calc(50% - 10px);
     }
 }
 .article-card > .item > .link {
+    color: inherit;
     display: block;
+    font-size: inherit;
+    text-decoration: none;
     transition: opacity 0.3s;
     width: 100%;
 }
@@ -93,9 +109,12 @@
 .article-card > .item .img-box .img {
     display: block;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
     width: 100%;
+}
+.article-card > .item .img-box .img.contain {
+    object-fit: contain;
 }
 .article-card > .item > .link:hover > .img-box .img {
     -ms-transform: scale(1.1);
