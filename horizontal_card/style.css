@@ -45,9 +45,14 @@
  </ul>
 **********************************************************************/
 .horizontal-card {
-    margin: 20px auto;
+    margin: 0;
     padding: 0;
     width: 100%;
+}
+.horizontal-card.important {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
 }
 .horizontal-card > .item {
     box-sizing: border-box;
@@ -60,8 +65,10 @@
 }
 .horizontal-card > .item > .link {
     box-sizing: border-box;
+    color: inherit;
     display: -webkit-flex;
     display: flex;
+    text-decoration: none;
     transition: opacity 0.3s;
     width: 100%;
 }
@@ -126,6 +133,7 @@
     font-size: 1.15em;
     font-weight: bold;
     line-height: 1.25;
+    margin: 0;
     text-decoration: underline;
     word-break: break-all;
 }
@@ -140,7 +148,7 @@
 .horizontal-card > .item > .content-box > .excerpt,
 .horizontal-card > .item > .link > .content-box > .excerpt {
     font-size: 0.9em;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     opacity: 0.8;
     word-break: break-all;
 }
