@@ -4,19 +4,17 @@
  Plan card
 
  [HTML]
- <div class="plan-card" data-max_cols_min_width_600="1">
+ <div class="plan-card" data-max-cols-min-width-896="2">
    <div class="item">
-     <div class="img-box">
-       <picture>
-         <source srcset="/sample.webp">
-         <img class="img" src="sample.jpg" alt="Sample Image" loading="lazy">
-       </picture>
-     </div>
+     <picture class="img-box">
+       <source srcset="/sample.webp">
+       <img class="img" src="sample.jpg" alt="Sample Image" loading="lazy">
+     </picture>
      <div class="content-box">
        <p class="title">Basic</p>
        <p class="price-box">
          <span class="currency">$</span>
-         <span class="amount">0</span>
+         <span class="amount">10</span>
          <span class="per">/mo</span>
        </p>
        <p class="description">The description of the basic plan is...</p>
@@ -39,7 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    line-height: normal;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -53,7 +51,7 @@
     .plan-card > .item {
         width: calc(50% - 10px);
     }
-    .plan-card[data-max_cols_min_width_600="1"] > .item {
+    .plan-card[data-max-cols-min-width-600="1"] > .item {
         width: 100%;
     }
 }
@@ -61,7 +59,7 @@
     .plan-card > .item {
         width: calc(33.33% - 13.33px);
     }
-    .plan-card[data-max_cols_min_width_896="2"] > .item {
+    .plan-card[data-max-cols-min-width-896="2"] > .item {
         width: calc(50% - 10px);
     }
 }
@@ -69,10 +67,10 @@
     .plan-card > .item {
         width: calc(25% - 15px);
     }
-    .plan-card[data-max_cols_min_width_1200="3"] > .item {
+    .plan-card[data-max-cols-min-width-1200="3"] > .item {
         width: calc(33.33% - 13.33px);
     }
-    .plan-card[data-max_cols_min_width_1200="2"] > .item {
+    .plan-card[data-max-cols-min-width-1200="2"] > .item {
         width: calc(50% - 10px);
     }
 }
@@ -130,12 +128,14 @@
 }
 @media screen and (min-width: 600px) {
     .plan-card > .item > .content-box > .description {
-        font-size: 0.75em;
+        font-size: 0.9em;
     }
 }
 .plan-card > .item > .content-box > .list {
     box-sizing: border-box;
-    margin-top: 10px;
+    line-height: 1.5;
+    list-style-type: none;
+    margin: 10px 0 0 0;
     padding: 10px;
     position: relative;
 }
@@ -207,9 +207,9 @@
     -moz-align-items: center;
     align-items: center;
     background-color: inherit;
-    border: 1px solid var(--nkw-color-success);
+    border: 1px solid #28a745;
     box-sizing: border-box;
-    color: var(--nkw-color-success);
+    color: #28a745;
     cursor: pointer;
     display: -webkit-box;
     display: -moz-box;
@@ -217,7 +217,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    fill: var(--nkw-color-success);
+    fill: #28a745;
     font-weight: bold;
     -webkit-justify-content: center;
     justify-content: center;
@@ -226,7 +226,7 @@
     transition: opacity 0.3s;
 }
 .plan-card > .item > .content-box > .submit.fill {
-    background-color: var(--nkw-color-success);
+    background-color: #28a745;
     color: #ffffff;
 }
 .plan-card > .item > .content-box > .submit:hover {
