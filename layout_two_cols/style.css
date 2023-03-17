@@ -6,30 +6,28 @@
 .layout-two-cols {
     display: -webkit-flex;
     display: flex;
-    position: relative;
     width: 100%;
 }
 .layout-two-cols > .layout-two-cols-side {
     box-sizing: border-box;
     flex: 0 0 0;
-    max-height: calc(100vh - 50px);
-    overflow-y: scroll;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px;
+    min-width: 0;
+    position: relative;
+    transition: all 0.3s;
+    width: 0;
     z-index: 1;
-    transition: all 0.3s ease-in-out;
 }
 @media screen and (min-width: 1200px) {
     .layout-two-cols > .layout-two-cols-side {
         flex-basis: 30vw;
+        width: unset;
     }
 }
 .layout-two-cols > .layout-two-cols-content {
     flex: 1 1 100vw;
     min-width: 0;
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: flex-basis 0.3s;
     z-index: 2;
 }
 @media screen and (min-width: 1200px) {
