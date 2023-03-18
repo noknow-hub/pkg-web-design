@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Profile card
+
+ [HTML]
+ <div class="profile-card" data-horizontal-min-width="768">
+   <picture class="header-img">
+     <source srcset="/img/xxx.webp" type="image/webp">
+     <img src="/img/xxx.jpg" alt="" loading="lazy">
+   </picture>
+   <div class="content">
+     <p class="name">NAME</p>
+     <p class="profession">PROFESSION</p>
+     <p class="bio">BIO</p>
+     <div class="sns">
+       <a class="icon-link color-sns-twitter" href="" target="_blank">
+         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="/img/xxx.svg#xxx"/></svg>
+       </a>
+       <a class="icon-link color-sns-instagram" href="" target="_blank">
+         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use xlink:href="/img/xxx.svg#xxx"/></svg>
+       </a>
+     </div>
+   </div>
+ </div>
+**********************************************************************/
+.profile-card {
+    margin: 0;
+    max-width: 350px;
+    padding: 0;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .profile-card[data-horizontal-min-width="600"] {
+        display: -webkit-flex;
+        display: flex;
+        max-width: unset;
+    }
+}
+@media screen and (min-width: 768px) {
+    .profile-card[data-horizontal-min-width="768"] {
+        display: -webkit-flex;
+        display: flex;
+        max-width: unset;
+    }
+}
+@media screen and (min-width: 896px) {
+    .profile-card[data-horizontal-min-width="896"] {
+        display: -webkit-flex;
+        display: flex;
+        max-width: unset;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .profile-card[data-horizontal-min-width="1024"] {
+        display: -webkit-flex;
+        display: flex;
+        max-width: unset;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .profile-card[data-horizontal-min-width="1200"] {
+        display: -webkit-flex;
+        display: flex;
+        max-width: unset;
+    }
+}
+.profile-card > .header-img {
+    aspect-ratio: 1.618 / 1;
+    display: block;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .profile-card[data-horizontal-min-width="600"] > .header-img {
+        flex: 1 1 50%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .profile-card[data-horizontal-min-width="768"] > .header-img {
+        flex: 1 1 50%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 896px) {
+    .profile-card[data-horizontal-min-width="896"] > .header-img {
+        flex: 1 1 50%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .profile-card[data-horizontal-min-width="1024"] > .header-img {
+        flex: 1 1 50%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .profile-card[data-horizontal-min-width="1200"] > .header-img {
+        flex: 1 1 50%;
+        height: auto;
+    }
+}
+.profile-card > .header-img > img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.profile-card > .content {
+    background-color: #fafafa;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .profile-card[data-horizontal-min-width="600"] > .content {
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .profile-card[data-horizontal-min-width="768"] > .content {
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 896px) {
+    .profile-card[data-horizontal-min-width="896"] > .content {
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .profile-card[data-horizontal-min-width="1024"] > .content {
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .profile-card[data-horizontal-min-width="1200"] > .content {
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+}
+.profile-card > .content > .name {
+    color: inherit;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;
+    word-break: break-all;
+}
+.profile-card > .content > .profession {
+    color: inherit;
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 10px auto;
+    text-align: center;
+    word-break: break-all;
+}
+.profile-card > .content > .bio {
+    color: inherit;
+    font-size: 0.9em;
+    margin: 1.5em auto 1em;
+    text-align: center;
+    word-break: break-word;
+}
+.profile-card > .content > .sns {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em auto 0;
+    gap: 0.5em;
+}
+.profile-card > .content > .sns > .icon-link {
+    background-color: inherit;
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    text-decoration: none;
+}
+.profile-card > .content > .sns > .icon-link > .icon {
+    display: block;
+    fill: inherit;
+    height: 24px;
+    transition: opacity 0.3s;
+    width: 24px;
+}
+.profile-card > .content > .sns > .icon-link:hover > .icon {
+    opacity: 0.3;
+}
+
