@@ -13,7 +13,7 @@
     flex: 0 0 0;
     min-width: 0;
     position: relative;
-    transition: all 0.3s;
+    transition: flex-basis 0.3s;
     visibility: hidden;
     width: 0;
     z-index: 1;
