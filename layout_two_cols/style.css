@@ -10,19 +10,17 @@
 }
 .layout-two-cols > .layout-two-cols-side {
     box-sizing: border-box;
+    display: none;
     flex: 0 0 0;
     min-width: 0;
     position: relative;
     transition: flex-basis 0.3s;
-    visibility: hidden;
-    width: 0;
     z-index: 1;
 }
 @media screen and (min-width: 1200px) {
     .layout-two-cols > .layout-two-cols-side {
+        display: block;
         flex-basis: 30vw;
-        visibility: visible;
-        width: unset;
     }
 }
 .layout-two-cols > .layout-two-cols-content {
