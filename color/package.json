@@ -3,22 +3,22 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for card list",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/article_card",
+  "description": "Web design for color",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/color",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-article-card",
+  "name": "@noknow/web-design-color",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "article_card"
+    "directory": "color"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.4"
+  "version": "0.1.0"
 }
