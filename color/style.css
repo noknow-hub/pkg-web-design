@@ -3,26 +3,26 @@
 /**********************************************************************
  .color-*
 **********************************************************************/
-.color-command { color: #218f11; }
-.color-comment { color: #008000; }
-.color-error { color: #dc3545; }
-.color-info { color: #17a2b8; }
-.color-link { color: #007bff; }
-.color-note { color: #e66572; }
-.color-sns-discord { color: #5865F2; }
-.color-sns-facebook { color: #3b5999; }
-.color-sns-hatena-bookmark { color: #00a5de; }
-.color-sns-instagram { color: #262626; }
-.color-sns-line { color: #00c300; }
-.color-sns-linkedin { color: #0077B5; }
-.color-sns-pinterest { color: #bd081c; }
-.color-sns-pocket { color: #ef3f56; }
-.color-sns-reddit { color: #FF4301; }
-.color-sns-tumblr { color: #34465d; }
-.color-sns-telegram { color: #0088cc; }
-.color-sns-twitter { color: #55acee; }
-.color-sns-weibo { color: #df2029; }
-.color-success { color: #28a745; }
-.color-warning { color: #ffc107; }
+.color-command             { color: #218f11; fill: #218f11; }
+.color-comment             { color: #008000; fill: #008000; }
+.color-error               { color: #dc3545; fill: #dc3545; }
+.color-info                { color: #17a2b8; fill: #17a2b8; }
+.color-link                { color: #007bff; fill: #007bff; }
+.color-note                { color: #e66572; fill: #e66572; }
+.color-sns-discord         { color: #5865F2; fill: #5865F2; }
+.color-sns-facebook        { color: #3b5999; fill: #3b5999; }
+.color-sns-hatena-bookmark { color: #00a5de; fill: #00a5de; }
+.color-sns-instagram       { color: #262626; fill: #262626; }
+.color-sns-line            { color: #00c300; fill: #00c300; }
+.color-sns-linkedin        { color: #0077B5; fill: #0077B5; }
+.color-sns-pinterest       { color: #bd081c; fill: #bd081c; }
+.color-sns-pocket          { color: #ef3f56; fill: #ef3f56; }
+.color-sns-reddit          { color: #FF4301; fill: #FF4301; }
+.color-sns-tumblr          { color: #34465d; fill: #34465d; }
+.color-sns-telegram        { color: #0088cc; fill: #0088cc; }
+.color-sns-twitter         { color: #55acee; fill: #55acee; }
+.color-sns-weibo           { color: #df2029; fill: #df2029; }
+.color-success             { color: #28a745; fill: #28a745; }
+.color-warning             { color: #ffc107; fill: #ffc107; }
 
 

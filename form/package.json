@@ -3,22 +3,22 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for table",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/table",
+  "description": "Web design for form",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/form",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-table",
+  "name": "@noknow/web-design-form",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "table"
+    "directory": "form"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.3"
+  "version": "0.1.1"
 }

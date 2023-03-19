@@ -5,16 +5,16 @@
 
  [HTML]
  <table class="table">
-   <thead class="thead">
-     <tr class="tr">
-       <th class="th">THEAD</th>
-       <th class="th">THEAD</th>
+   <thead>
+     <tr>
+       <th>THEAD</th>
+       <th>THEAD</th>
      </tr>
    </thead>
-   <tbody class="tbody">
-     <tr class="tr">
-       <td class="td">TDATA</td>
-       <td class="td">TDATA</td>
+   <tbody>
+     <tr>
+       <td>TDATA</td>
+       <td>TDATA</td>
      </tr>
    </tbody>
  </table>
@@ -82,8 +82,7 @@
     position: sticky;
     z-index: 2;
 }
-.table > thead > tr > th,
-.table > tbody > tr > th {
+.table > thead > tr > th {
     border-bottom: 3px inset;
     font-weight: bold;
     white-space: nowrap;
