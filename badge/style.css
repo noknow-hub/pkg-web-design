@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Badge
+
+ [HTML]
+ <span class="badge">Badge</span>
+ <a class="badge-link" href="">Badge Link</a>
+ <span class="badge">
+   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use href=""></use></svg>
+   <span>Badge with icon</span>
+ </span>
+ <a class="badge-link" href="">
+   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use href=""></use></svg>
+   <span>Badge Link with icon</span>
+ </a>
+ <a class="badge-link" href="">
+   <span>Badge Link with icon</span>
+   <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use href=""></use></svg>
+ </a>
+**********************************************************************/
+.badge,
+.badge-link {
+    background-color: rgb(250 250 250);
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 5px;
+    padding: 2.5px 10px;
+}
+.badge-link {
+    color: #007bff;
+    text-decoration: underline;
+    transition: opacity 0.3s;
+}
+.badge-link:hover {
+    opacity: 0.6;
+}
+.badge > .icon,
+.badge-link > .icon {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    object-fit: contain;
+    padding: 0;
+    width: 16px;
+    vertical-align: middle;
+}
+.badge > .icon:first-child,
+.badge-link > .icon:first-child {
+    margin-right: 3px;
+}
+.badge > .icon:last-child,
+.badge-link > .icon:last-child {
+    margin-left: 3px;
+}

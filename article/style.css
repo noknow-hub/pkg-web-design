@@ -20,118 +20,94 @@
 }
 
 
-.article * {
+.article *:not([class]) {
     line-height: 1.5;
 }
 
 
-.article h1,
-.article h2,
-.article h3 {
+.article h1:not([class]),
+.article h2:not([class]),
+.article h3:not([class]) {
     font-weight: bold;
 }
 
 
 
-.article h1 {
+.article h1:not([class]) {
     font-size: 1.5rem;
     margin: 3.0em 0 1.0em;
 }
+.article h1.text-align-center {
+    font-size: 1.5rem;
+    margin: 3.0em 0 1.0em;
+    text-align: center;
+}
 @media screen and (min-width: 768px) {
-    .article h1 {
+    .article h1:not([class]) {
         font-size: 1.75rem;
     }
 }
 @media screen and (min-width: 1024px) {
-    .article h1 {
+    .article h1:not([class]) {
         font-size: 2.0rem;
     }
 }
 
 
-.article h2 {
+.article h2:not([class]) {
     border-bottom: 2px solid;
     font-size: 1.3rem;
     margin: 2.0em 0 1.0em;
 }
 @media screen and (min-width: 768px) {
-    .article h2 {
+    .article h2:not([class]) {
          font-size: 1.4rem;
      }
 }
 @media screen and (min-width: 1024px) {
-    .article h2 {
+    .article h2:not([class]) {
          font-size: 1.5rem;
      }
 }
 
 
-.article h3 {
+.article h3:not([class]) {
     font-size: 1.15rem;
     margin: 2.0em 0 1.0em;
 }
 @media screen and (min-width: 768px) {
-    .article h3 {
+    .article h3:not([class]) {
          font-size: 1.175rem;
      }
 }
 @media screen and (min-width: 1024px) {
-    .article h3 {
+    .article h3:not([class]) {
          font-size: 1.2rem;
      }
 }
 
 
-.article ul {
+.article ul:not([class]) {
     line-height: 1.75;
     list-style-type: disc;
-    margin: 1.0em 0 1.0em 1.2em;
-    padding: 0;
+    margin: 1.0em 0 1.0em 1.0em;
 }
-.article ul.list-style-none {
-    list-style-type: none;
-}
-.article ul ul {
+.article ul ul:not([class]) {
     list-style-type: circle;
     margin: 0 0 0 1.0em;
 }
-.article ul ul ul {
+.article ul ul ul:not([class]) {
     list-style-type: square;
 }
-.article ul ul ul.list-style-none {
-    list-style-type: none;
-}
-.article ul > li {
-    line-height: 1.75;
-}
-.article ol {
-    line-height: 1.75;
-    list-style-type: decimal;
-    margin: 1.0em 0 1.0em 1.2em;
-    padding: 0;
-}
-.article ol ol {
-    margin: 0 0 0 1.0em;
-}
-.article ol.list-style-none {
-    list-style-type: none;
-    margin: 1em 0;
-}
-.article ol ol.list-style-none {
-    margin: 0 0 0 1.0em;
-}
-.article ol > li {
-    line-height: 1.75;
-}
 
 
-.article p {
+.article p:not([class]) {
     font-size: 1.0rem;
     margin: 1.0em 0;
 }
 
 
-.article a {
+.article a:not([class]) {
     color: #007bff;
     font-size: 1.0rem;
     text-decoration: underline;
