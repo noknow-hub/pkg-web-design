@@ -3,22 +3,22 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for color",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/color",
+  "description": "Web design for breadcrumb",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/breadcrumb",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-color",
+  "name": "@noknow/web-design-breadcrumb",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "color"
+    "directory": "breadcrumb"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.2"
+  "version": "0.1.0"
 }

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Breadcrumb
+ [HTML]
+ <nav class="breadcrumb">
+   <ul class="row">
+     <li class="item"><a class="link" href="" title="">Level-1<a></li>
+     <li class="item">Level-2</li>
+   </<ul>
+ </nav>
+**********************************************************************/
+.breadcrumb {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    font-style: italic;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+}
+.breadcrumb > .row {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.breadcrumb > .row > .item {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0.75em;
+    margin: 3px;
+}
+.breadcrumb > .row > .item:nth-child(n + 2)::before {
+    content: '>';
+    display: block;
+    margin: 0 7px;
+}
+.breadcrumb > .row > .item > .link {
+    color: #007bff;
+    display: block;
+    font-weight: bold;
+    text-decoration: underline;
+}
