@@ -141,7 +141,7 @@
 .form-group .input-group {
     -webkit-align-items: center;
     align-items: center;
-    border: 1px solid var(--nkw-color-form-border);
+    border: 1px solid #808080;
     box-sizing: border-box;
     display: -webkit-flex;
     display: flex;
@@ -150,13 +150,11 @@
     border: none;
 }
 .form-group .input-group > .icon {
-    color: var(--nkw-color-form-icon);
-    fill: var(--nkw-color-form-icon);
-    height: var(--nkw-icon-size-medium);
+    height: 24px;
     line-height: initial;
     padding: 0 10px;
     text-align: center;
-    width: var(--nkw-icon-size-medium);
+    width: 24px;
 }
 .form-group [data-select-filter-tooltip-target] {
     -webkit-appearance: none;
@@ -177,7 +175,7 @@
 }
 .form-group [data-select-filter-tooltip-id] {
     background-color: #fff;
-    border-radius: var(--nkw-border-radius);
+    border-radius: 7px;
     box-sizing: border-box;
     opacity: 0;
     position: absolute;
