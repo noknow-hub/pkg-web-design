@@ -23,9 +23,11 @@
 .badge-link {
     background-color: rgb(250 250 250);
     display: inline-block;
-    font-size: 15px;
-    line-height: 30px;
-    margin: 0 5px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    gap: 10px;
+    line-height: 1.5;
+    margin: 0;
     padding: 2.5px 10px;
 }
 .badge-link {

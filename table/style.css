@@ -141,12 +141,19 @@
     font-size: inherit;
     font-weight: bold;
     margin-left: 5px;
+    opacity: 0.2;
     padding: 3px 5px;
+    pointer-events: none;
     text-decoration: underline;
     transition: opacity 0.3s ease-in-out;
 }
-.table-footer > .pagination-box > .prev:hover,
-.table-footer > .pagination-box > .next:hover {
+.table-footer > .pagination-box > .prev.active,
+.table-footer > .pagination-box > .next.active {
+    opacity: 1;
+    pointer-events: unset;
+}
+.table-footer > .pagination-box > .prev.active:hover,
+.table-footer > .pagination-box > .next.active:hover {
     opacity: 0.4;
 }
 

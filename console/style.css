@@ -23,8 +23,11 @@
     box-sizing: border-box;
     display: inline-block;
     font-size: 0.9em;
+    left: 0;
     margin-bottom: 10px;
     opacity: 0.4;
+    position: sticky;
+    top: 0;
 }
 .console > pre {
     font-family: Consolas, Menlo, 'Liberation Mono', Courier, Monaco, monospace;

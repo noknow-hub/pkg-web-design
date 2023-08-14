@@ -4,7 +4,7 @@
  Form
 **********************************************************************/
 .form-flex {
-    align-items: center;
+    align-items: flex-end;
     display: -webkit-flex;
     display: flex;
     gap: 1em;
@@ -21,7 +21,7 @@
     width: 100%;
 }
 .form-flex .form-group {
-    margin: auto;
+    margin: 0;
 }
 .form-group.inline {
     -webkit-align-items: center;
@@ -73,6 +73,7 @@
 .form-group > .note.active {
     display: inline-block;
 }
+.form-group button,
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -86,6 +87,9 @@
     outline: none;
     padding: 10px;
     width: 100%;
+}
+.form-group button {
+    border: none;
 }
 .form-group textarea {
     height: auto;

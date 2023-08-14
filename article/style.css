@@ -107,6 +107,16 @@
 }
 
 
+.article ol:not([class]) {
+    line-height: 1.75;
+    list-style-type: decimal;
+    margin: 1.0em 0 1.0em 1.0em;
+}
+.article ol ol:not([class]) {
+    margin: 0 0 0 1.0em;
+}
+
+
 .article p:not([class]) {
     font-size: 1.0rem;
     margin: 1.0em 0;
@@ -120,4 +130,6 @@
 }
 
 
-
+.article small:not([class]) {
+    font-size: small;
+}

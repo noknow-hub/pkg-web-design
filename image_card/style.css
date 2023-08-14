@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Image card
+
+ [HTML]
+ <ul class="image-card">
+   <li class="card">
+     <img alt="" src="/sample.png">
+   </li>
+   <li class="card">
+     <picture>
+       <source srcset="/sample.webp" type="image/webp">
+       <img alt="" class="img" src="/sample.png">
+     <picture>
+   </li>
+   <li class="card">
+     <video src="/sample.mp4" controls></video>
+   </li>
+   <li class="card">
+     <a class="link" href="">
+       <picture>
+         <source srcset="/sample.webp" type="image/webp">
+         <img src="/sample.jpg" alt="">
+       </picture>
+     </a>
+   </li>
+   <li class="card">
+     <figure class="figure">
+       <picture>
+         <source srcset="/sample.webp" type="image/webp">
+         <img src="/sample.jpg" alt="">
+       </picture>
+       <figcaption class="figcaption">Fig.1 - XXXX</figcaption>
+     </figure>
+   </li>
+ </ul>
+**********************************************************************/
+.image-card {
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 1.5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.image-card > .card {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .image-card > .card {
+        width: calc(50% - 10px);
+    }
+    .image-card[data-max-cols-min-width-600="1"] > .card {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 896px) {
+    .image-card > .card {
+        width: calc(33.33% - 13.33px);
+    }
+    .image-card[data-max-cols-min-width-896="2"] > .card {
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .image-card > .card {
+        width: calc(25% - 15px);
+    }
+    .image-card[data-max-cols-min-width-1200="3"] > .card {
+        width: calc(33.33% - 13.33px);
+    }
+    .image-card[data-max-cols-min-width-1200="2"] > .card {
+        width: calc(50% - 10px);
+    }
+}
+.image-card > .card.active img {
+    opacity: 0.5;
+    position: relative;
+}
+.image-card > .card.active::before {
+    background-color: #323232;
+    border-radius: 50%;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 20px;
+    z-index: 1;
+}
+.image-card > .card.active::after {
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    content: '';
+    display: flex;
+    height: 9px;
+    right: 16px;
+    position: absolute;
+    top: 14.5px;
+    width: 5px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.image-card > .card > .link {
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    height: 100%;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+.image-card > .card > .link:hover {
+    opacity: 0.6;
+}
+.image-card > .card img {
+    aspect-ratio: 1.618 / 1;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+.image-card > .card img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.image-card > .card .figure {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.image-card > .card .figure > .figcaption {
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    word-break: break-word;
+    z-index: 2;
+}
+.image-card > .card > [type="checkbox"] {
+    display: none;
+}

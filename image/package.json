@@ -3,22 +3,22 @@
   "bugs": {
     "url": "https://github.com/noknow-hub/pkg-web-design/issues"
   },
-  "description": "Web design for article",
-  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/article",
+  "description": "Web design for image",
+  "homepage": "https://github.com/noknow-hub/pkg-web-design/tree/main/image",
   "license": "MIT",
   "main": "index.js",
-  "name": "@noknow/web-design-article",
+  "name": "@noknow/web-design-image",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noknow-hub/pkg-web-design.git",
-    "directory": "article"
+    "directory": "image"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "0.1.7"
+  "version": "0.1.3"
 }

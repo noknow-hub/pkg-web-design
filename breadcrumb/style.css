@@ -5,9 +5,9 @@
  [HTML]
  <nav class="breadcrumb">
    <ul class="row">
-     <li class="item"><a class="link" href="" title="">Level-1<a></li>
+     <li class="item"><a class="link" href="" title="">Level-1</a></li>
      <li class="item">Level-2</li>
-   </<ul>
+   </ul>
  </nav>
 **********************************************************************/
 .breadcrumb {

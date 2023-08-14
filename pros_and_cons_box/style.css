@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Pros and Cons  Box
+
+ [HTML]
+ <div class="pros-and-cons-box">
+   <div class="box pros">
+     <p class="text">PROS</p>
+     <ul class="list">
+       <li></li>
+       <li></li>
+       <li></li>
+     </ul>
+   </div>
+   <div class="box cons">
+     <p class="text">CONS</p>
+     <ul class="list">
+       <li></li>
+       <li></li>
+       <li></li>
+     </ul>
+   </div>
+ </div>
+**********************************************************************/
+.pros-and-cons-box {
+    width: 100%;
+}
+.pros-and-cons-box > .box {
+    box-sizing: border-box;
+}
+.pros-and-cons-box > .box.pros {
+    background-color: #e3ffe9;
+}
+.pros-and-cons-box > .box.cons {
+    background-color: #ffdde0;
+}
+.pros-and-cons-box > .box + .box {
+    margin-top: 1.0em;
+}
+.pros-and-cons-box > .box > .text {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 1em;
+}
+.pros-and-cons-box > .box.pros > .text {
+    background-color: #c0ffce;
+}
+.pros-and-cons-box > .box.cons > .text {
+    background-color: #ffc0c5;
+}
+.pros-and-cons-box > .box > .text > .icon {
+    height: 24px;
+    width: 24px;
+}
+.pros-and-cons-box > .box > .list {
+    line-height: 1.5;
+    list-style: disc;
+    padding: 1em 1em 1em 2em;
+}
+.pros-and-cons-box > .box > .text + .list {
+}
+.pros-and-cons-box > .box > .list > li {
+
+}
+.pros-and-cons-box > .box > .list > li + li {
+    margin-top: 1em;
+}

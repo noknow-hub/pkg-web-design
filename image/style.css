@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/**********************************************************************
+ Image
+
+ [HTML]
+ <div class="image">
+   <img alt="" src="">
+ </div>
+
+ <picture class="image">
+   <source srcset="xxxx.webp" type="image/webp">
+   <img alt="" src="">
+ <picture>
+
+ <div class="image">
+   <video src="/sample.mp4" controls></video>
+ </div>
+
+ <a class="image-link" href="">
+   <picture>
+     <source srcset="/sample.webp" type="image/webp">
+     <img src="/sample.jpg" alt="">
+   </picture>
+ </a>
+
+ <div class="image">
+   <figure>
+     <picture>
+       <source srcset="/xxxx.webp" type="image/webp">
+       <img src="/sample.jpg" alt="">
+     </picture>
+     <figcaption>Fig.1 - XXXX</figcaption>
+   </figure>
+ </div>
+**********************************************************************/
+.image,
+.image-link {
+    aspect-ratio: 1.618 / 1;
+    display: block;
+    margin: 0;
+    max-width: 800px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.image img,
+.image video,
+.image-link img,
+.image-link video {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+.image[data-animation="scale"] img,
+.image-link[data-animation="scale"] img {
+    transition: transform 0.3s;
+}
+.image[data-animation="scale"] img:hover,
+.image-link[data-animation="scale"] img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.image > figure,
+.image-link > figure {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.image > figure > figcaption,
+.image-link > figure > figcaption {
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    word-break: break-all;
+    z-index: 2;
+}
