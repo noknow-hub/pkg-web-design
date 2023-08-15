@@ -19,6 +19,17 @@
    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><use href=""></use></svg>
  </a>
 **********************************************************************/
+.badge-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: right;
+    margin: 1rem 0;
+    padding: 0;
+}
+.badge-box.no-margin {
+    margin: 0;
+}
 .badge,
 .badge-link {
     background-color: rgb(250 250 250);
@@ -29,6 +40,10 @@
     line-height: 1.5;
     margin: 0;
     padding: 2.5px 10px;
+}
+.badge-box > .badge,
+.badge-box > .badge-link {
+    margin: 0;
 }
 .badge-link {
     color: #007bff;
