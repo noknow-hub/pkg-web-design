@@ -17,7 +17,7 @@ npm install @noknow/web-design-reset
 
 
 
-### Install with Github
+### Install with GitHub
 
 ```console
 cd /YOUR_PROJECT/css
@@ -27,9 +27,7 @@ cd lib/noknow_web_design
 git init
 git remote add -f origin https://github.com/noknow-hub/pkg-web-design.git
 
-git config core.sparsecheckout true
-echo "reset" >> .git/info/sparse-checkout
-
+git sparse-checkout set reset
 git pull origin main
 ```
 
