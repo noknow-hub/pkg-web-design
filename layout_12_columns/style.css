@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*
+ * layout-12-columns
+ */
+.layout-12-columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.layout-12-columns > .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.layout-12-columns > .row > [class^="col-"] {
+
+}
+
+
